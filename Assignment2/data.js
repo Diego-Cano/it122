@@ -9,10 +9,8 @@ let southAmerica = [
 
 // getAll------------------
 const getAll = () => {
-    return  southAmerica.map((country) => {
-     return { country : country.country, population: country.population, capital: country.capital, currency: country.currency  };
-});
-}
+    return  southAmerica;
+};
 console.log(getAll())
 
 // getItem------------------
