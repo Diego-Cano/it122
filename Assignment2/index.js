@@ -14,10 +14,6 @@ http.createServer((req,res) => {
             res.writeHead(200, {'Content-Type': 'text/plain'});
             res.end(JSON.stringify(getAll()));
             break;
-        case '/about':
-            res.writeHead(200, {'Content-Type': 'text/plain'});
-            res.end('About page: Hello! My name is Diego Cano. I am 21 years old');
-            break;
         case '/detail':
             let found = getItem(query.name);
             res.writeHead(200, {'Content-Type': 'text/plain'});
